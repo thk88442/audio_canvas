@@ -1,0 +1,119 @@
+/* entire navbar */
+.navbar {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+/* top navbar */
+.navbar1 {
+    display: flex;
+    overflow: hidden;
+    background-color: rgb(57, 61, 57);
+    width: inherit;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* bottom navbar */
+.navbar2_hidden {
+    background-color: rgb(225, 225, 225);
+    width: 100%;
+}
+
+.navbar2 {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    margin: auto;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 55px;
+    background-color: rgb(34, 31, 31);
+    border: 0; /* <-- fix this so that parent div expands with child */
+}
+
+
+/* Genre tabs in navbar */
+.navbar2 div {
+    height: inherit;
+    width: inherit;
+    transition: all .3s ease-in-out;
+}
+
+.navbar2 div:hover {
+    transform: scale(1.25);
+}
+
+#rock {
+    background-image: url('../../assets/genre_pics/rock.jpg');
+    background-size: cover;
+    background-position-y: -15px;
+}
+
+#hip_hop {
+    background-image: url('../../assets/genre_pics/hiphop.jpg');
+    background-size: cover;
+    background-position-y: -70px;
+}
+
+#jazz {
+    background-image: url('../../assets/genre_pics/jazz.jpg');
+    background-size: cover;
+    background-position-y: -60px;
+}
+
+#folk {
+    background-image: url('../../assets/genre_pics/folk.jpg');
+    background-size: cover;
+    background-position-y: -50px;
+}
+
+#country {
+    background-image: url('../../assets/genre_pics/country.jpg');
+    background-size: cover;
+    background-position-y: -40px;
+}
+
+#soundtracks {
+    background-image: url('../../assets/genre_pics/soundtracks.jpg');
+    background-size: cover;
+    background-position-y: -60px;
+}
+
+
+
+.navbar div a {
+    text-decoration: none;
+    color: rgb(119, 119, 119);
+    font-size: 1.1rem;
+}
+
+.contents {
+    display: flex;
+    align-items: center;
+    color: white;
+    position: relative;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.contents input {
+    background-color: rgb(39, 39, 39);
+    border: 0;
+    height: 30px;
+    border-radius: 5px;
+    width: 290px;
+    color: rgb(224, 224, 224);
+}
+
+.contents input::placeholder {
+    font-size: 1rem;
+    color: rgb(153, 153, 153);
+    font-weight: 600;
+}
+
+.navbar_title {
+    font-size: 1rem;
+    color: rgb(233, 230, 230);
+}
